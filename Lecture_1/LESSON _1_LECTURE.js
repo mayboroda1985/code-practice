@@ -94,14 +94,9 @@ let b = 3;
 // //console.log(c);
 
 
-
-
 //===============================================
 
 //concatination
-
-
-
 
 //8 Data types
 //https://javascript.info/types
@@ -204,7 +199,6 @@ let b = 3;
 
 // let a = 5;
 // console.log(a % 2); // odd - нечетный
-
 
 
 
