@@ -69,7 +69,6 @@ console.log(line);
 
 //===================================
 
-
 //2.Print the result of string concatination
 // let name1 = "Hello";
 // let name2 = 'World';
