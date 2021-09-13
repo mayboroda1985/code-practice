@@ -75,3 +75,7 @@ console.log("case 1: " + building);
 let building1 = window == 8 ||( !door && guest == "John") || typeof address == 'number';
 console.log("case 2: " + building);
 
+//8. Transfer 7 to boolean
+// let a = 7;
+// console.log(!!a);
+
