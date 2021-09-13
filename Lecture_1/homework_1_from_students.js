@@ -1,56 +1,32 @@
 
-// Homework1 from students
-
-/*
-STUDENTS HOMEWORK LESSON 1
-*/
+// STUDENTS HOMEWORK LESSON 1
 
 //1. Write a code where you will find a perimeter of a square, where side a = 10, side b = 12;
 
-// let a = 10, b =12;
-// let perimeter = 2 * (a + b);
-// console.log(perimeter);
+let a = 10, b =12;
+let perimeter = 2 * (a + b);
+console.log(perimeter);
 
-/*2.  Create a string with a name userAge and a value “21” and change
+ /*2.  Create a string with a name userAge and a value “21” and change
 the data type from a string to a number and add 10 to that number.  */
 
-// let userAge = "21";
-//     userAge //8. Transfer 7 to boolean
-// // let a = 7;
-// // console.log(!!a);
-//
-// // Homework1 from students
-//
-// /*
-// STUDENTS HOMEWORK LESSON 1
-// */
-//
-// //1. Write a code where you will find a perimeter of a square, where side a = 10, side b = 12;
-//
-// // let a = 10, b =12;
-// // let perimeter = 2 * (a + b);
-// // console.log(perimeter);
-//
-// /*2.  Create a string with a name userAge and a value “21” and change
-// the data type from a string to a number and add 10 to that number.  */
-//
-// // let userAge = "21";
-// //     userAge = 21;
-// //     userAge += 10;
-// // console.log(userAge);
-//
-//
-// /*3. Create 5 variables, initialize them with integers and find the
-// average of variables. Print the result to console*/
-// //  let a = 4,
-// //      b = 3,
-// //      c = 6,
-// //      d = 7,
-// //      e = 8;
-// // let average =(a + b + c + d + e)/5;
-// // console.log(average);
-//
-// /*4. Create a variable, initialize it with a positive integer.
+ let userAge = "21";
+     userAge = 21;
+   userAge += 10;
+ console.log(userAge);
+
+
+/*3. Create 5 variables, initialize them with integers and find the
+ average of variables. Print the result to console*/
+  let a = 4,
+      b = 3,
+     c = 6,
+    d = 7,
+     e = 8;
+ let average =(a + b + c + d + e)/5;
+ console.log(average);
+
+ /*4. Create a variable, initialize it with a positive integer.
 // Make it negative and print the result to console */
 //
 // //  let a = 10;
@@ -89,13 +65,15 @@ the data type from a string to a number and add 10 to that number.  */
 // where weight=<your_weight_in_kg> and height=<your_height_in_m>.
 // Print the result to the console. */
 //
-// // let weight = 55;
-// // let height = 5.7;
-// // let bmi= weight / height;
-// // console.log(bmi);
-//
-//
-//
+//  let weight = 55;
+//  let height = 5.7;
+//  let bmi= weight / height;
+//  console.log(bmi);
+
+//8. Transfer 7 to boolean
+// let a = 7;
+// console.log(!!a);
+
 // /*9. Create two strings with your first name and last name.
 // Print in console lengths of these strings.*/
 //
