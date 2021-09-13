@@ -10,11 +10,14 @@ console.log(perimeter);
  /*2.  Create a string with a name userAge and a value “21” and change
 the data type from a string to a number and add 10 to that number.  */
 
- let userAge = "21";
+ let userAge = "21"; //my solving
      userAge = 21;
    userAge += 10;
  console.log(userAge);
-
+///////////
+userAge = userAge * 1;
+userAge = userAge +10;
+console.log(userAge);
 
 /*3. Create 5 variables, initialize them with integers and find the
  average of variables. Print the result to console*/
@@ -27,26 +30,35 @@ the data type from a string to a number and add 10 to that number.  */
  console.log(average);
 
  /*4. Create a variable, initialize it with a positive integer.
-// Make it negative and print the result to console */
-//
-// //  let a = 10;
-// //  let b = -1;
-// //  let c = a * b;
-//
-// // console.log(c);
-//
-// /*5. Create two variables with values(5, 7). The first with data type Integer
-// and the second with a String data type .
-// Raise the number 5 to the power of 2, save as a result.
-// Print in the console the sum of the result and the second variable.*/
-//
-// // let a = 5;
-// // let b = "7";
-// // let res = a ** 2;
-// // let sum = res + b;
-// // console.log(sum);
-//
-//
+ Make it negative and print the result to console */
+
+ let a = 10; //my solving
+ let b = -1;
+  let c = a * b;
+console.log(c);
+
+let a = 5; //student solving
+a = -a;
+console.log(a);
+
+
+ /*5. Create two variables with values(5, 7). The first with data type Integer
+ and the second with a String data type .
+ Raise the number 5 to the power of 2, save as a result.
+Print in the console the sum of the result and the second variable.*/
+
+ let a = 5; //my solving
+ let b = "7";
+ let res = a ** 2;
+ let sum = res + b;
+ console.log(sum);
+
+let a = 5; //student solving
+let b = "7";
+let res = a * +b;
+console.log(res);
+
+
 // //6. Create the alert “I wanna be the best Software Engineer”.
 // // let text =  "I wanna be the best Software Engineer";
 // // alert(text);
