@@ -59,48 +59,66 @@ let res = a * +b;
 console.log(res);
 
 
-// //6. Create the alert “I wanna be the best Software Engineer”.
-// // let text =  "I wanna be the best Software Engineer";
-// // alert(text);
-// // or alert("I wanna be the best Software Engineer");
-//
-// /*7. Create two variables of data type String with values:“So what?”
-// and “Work hard for that !!!”.
-// Concatenate two Strings and print in the console.*/
-//
-// //  let a = "So what?";
-// //  let b = "Work hard for that !!!"
-// //  let c = a + " " + b;
-// //  console.log(c);
-//
-// /*8. Write a code that calculates your BMI (Body Mass Index),
-// where weight=<your_weight_in_kg> and height=<your_height_in_m>.
-// Print the result to the console. */
-//
-//  let weight = 55;
-//  let height = 5.7;
-//  let bmi= weight / height;
-//  console.log(bmi);
+ //6. Create the alert “I wanna be the best Software Engineer”.
+ let text =  "I wanna be the best Software Engineer";
+ alert(text);
+ or alert("I wanna be the best Software Engineer");
+
+ /*7. Create two variables of data type String with values:“So what?”
+ and “Work hard for that !!!”.
+ Concatenate two Strings and print in the console.*/
+  let a = "So what?";
+  let b = "Work hard for that !!!"
+ let c = a + " " + b;
+  console.log(c);
+
+/*8. Write a code that calculates your BMI (Body Mass Index),
+ where weight=<your_weight_in_kg> and height=<your_height_in_m>.
+ Print the result to the console. */
+
+ let weight = 55;
+ let height = 5.7;
+ let bmi= weight / (height ** 2);
+ console.log(bmi);
 
 //8. Transfer 7 to boolean
 // let a = 7;
 // console.log(!!a);
 
-// /*9. Create two strings with your first name and last name.
-// Print in console lengths of these strings.*/
-//
-// // let firstName = "Anna";
-// // let lastName = "Mayboroda";
-// // let name = firstName + " " + lastName;
-// // console.log(name.length);
-// // console.log(name);
-//
-// //10 Create a variable (integer) which is a radius of a circle. Then write a code and calculate a length of circumference (длина окружности) of this circle.
-//
-// //11 Create two integer variables, one of which is a base and another is a height of a triangle, initialize them with any values. Then calculate a square footage of a triangle.
-//
-// //12 Refer to the last element of a string using a math operation where str = “Never give up”;
-//
+ /*9. Create two strings with your first name and last name.
+Print in console lengths of these strings.*/
+
+ let firstName = "Anna";
+ let lastName = "Mayboroda";
+ let name = firstName + " " + lastName;
+ console.log(name.length);
+ console.log(name);
+
+/*10 Create a variable (integer) which is a radius of a circle.
+Then write a code and calculate a length of circumference
+ (длина окружности) of this circle. */
+ let rad = 10;
+ const p = 3.14;
+ const int = 2;
+ let code = rad * int * p;
+ console.log(code);
+
+
+/* 11 Create two integer variables, one of which is a base and another is a height of a triangle,
+ initialize them with any values. Then calculate a square footage of a triangle. */
+let base = 5;
+let hight = 10;
+let areaTriangle = (base * hight)/2;
+console.log(areaTriangle);
+
+*/ 12 Refer to the last element of a string using a math operation where str = “Never give up”; */
+
+let str = "Never give up";
+let lastElement = str[str.length-1];
+console.log(lastElement);
+console.log(str[str.length-1]);
+
+lecture 3.1 min 40;17
 // //13 Determine the remainder of the division of the next variables: a = 11; b = 4. What is the remainder of variable a?
 //
 // //14. Declare empty variables a that equals true and b equals to 5.Declare variable result and make it equals to sum of a and b. Print the result
