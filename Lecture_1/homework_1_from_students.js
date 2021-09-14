@@ -252,40 +252,192 @@ console.log(`Jane paid for her lunch 'total amount' $${total}`);
 /* 29. Here is the data set: 9, 10, 12, 13, 13, 13, 15, 15, 16, 16, 18.
  Find and print: */
 
-Mean = 13
-Median =
-Mode
+Mean      // mean is srednee znachenie
+Median =       // srednee chislo v ryady
+Mode           //chashe vsego vstrechaetsya
+let mean = (9 + 10 + 12 + 13 + 13 + 13 + 15 + 15 + 16 + 16 + 18) / 11;
 
-// //30. The radius of a cone is 11 inches. Count and print the volume of this cone. The answer has to be a string. Think about the correct format for your answer.
-//
-// //31. Create variables "a"  with value 15 and "b" with value 18.  Assign the value of the doubled sum of the variables "a" and "b" to the variable "x"  and print the result to console.
-// //32. Дана сторона куба  5 см. Найти объем куба. Вывести ответ в виде строки: Объем куба составляет {вложить полученный результат} см.
-// //33. Дана строка: "Children can have different hobbies", вычислить длину этой строки, найти элемент под первым и последним индексом, вывести результаты в консоль.
-//
-// //34. Cторона квадрата равна 10. По середине квадрата проведена линия, разделяющая квадрат на 2 прямоугольника. Найдите и выведите периметр и площадь одного из получившихся прямоугольников.
-//
-// //35. Create 3 variables: one String type, one boolean and last one number. Check the type of each variable.
-// //36. You need  to receive Infinity in the console (using Math) and check what type it will be.
-//
-// //37. Let’s create a program that will convert our age into days. Create a variable age with your age and create a variable sum to multiply 365, Print console. Note ignore leap years, expect only positive integers.
-//
-// //38. Elon Musk has created a Tesla bot. We should greet it. Create a variable greeting and declare "Welcome to the earth!" and print it out.
-//
-// //39. Write a code where you will find distance, where speed = 70, time = 12;
-//
-// //40. Создайте переменную str и присвойте ей значение 'abcde'. Обращаясь к отдельным символам этой строки выведите на экран символ 'a', символ 'b', символ 'e’.
-//
-// //41. Напишите скрипт, который считает количество секунд в часе, в сутках, в месяце. Выведите результат в консоль.
-//
-// //42. Студент решил взять курс. Курс начинается с 1 Сентября по 31 Декабря. Каждый день студент занимается по 3 часа. Напишите, сколько всего времени студент потратит на весь курс. Выведете результат в консоль.
-//
-// //43. To burn calories for 1 chocolate Marusya needs to run 2km,and to burn calories for 1 ice cream 5km. How far she has to run if she breaks her diet by eating 2,5 chocolates and 3 ice creams.Print the distance in the console.
-//
-// //44. Print in the console “x” from the word “supercalifragilisticexpialidocious” through enrichment to the index in this word and what is the length of this word.
-//
-// //45. Create the variable with the name => sentence  and declare the value "Have a nice day". Count the number of letters in a string. Console the result. What is the last letter in the line? Console the number of letters and the last letter. Console the last letter.
-//
-// //46. Write a code that  calculates Volume of the cube with length of side = 7  and calculate length of all sides. Return statement “The volume of the cube = ...    with length of 1 side = … and length of all sides …” -> using ` ${}`.
+/* 30. The radius of a cone is 11 inches.
+Count and print the volume of this cone.
+The answer has to be a string.
+Think about the correct format for your answer. */
+
+let radiusOfCone = 11;
+let heightOfCone = 18;
+let volumeOfCone = 1 / 3 * radiusOfCone ** 2 * heightOfCone;
+console.log('The volume of cone is ' + volumeOfCone +' cubic inches' );
+
+
+/* 31. Create variables "a"  with value 15 and "b" with value 18.
+ Assign the value of the doubled sum of the variables "a" and "b"
+ to the variable "x" and print the result to console. */
+
+let a = 15;
+let b = 18;
+let x  = 2 * (a + b);
+console.log(x);
+
+/* 32. Дана сторона куба  5 см. Найти объем куба.
+ Вывести ответ в виде строки: Объем куба составляет
+  {вложить полученный результат} см. */
+
+let cubeSide = 5;
+let volume = 5 ** 3;
+console.log(`Объем куба составляет ${volume}см.`)
+//or
+console.log(`Объем куба составляет ` + volume + 'см.')
+
+/* 33. Дана строка: "Children can have different hobbies",
+ вычислить длину этой строки, найти элемент под первым и последним индексом,
+  вывести результаты в консоль. */
+
+let str = "Children can have different hobbies";
+console.log(str.length);
+console.log(str[0]);
+console.log(str[str.length-1]);
+
+//or
+let str = "Children can have different hobbies";
+let stringLength = string.length;
+let firstElement = string[0];
+let lastElement = string[string.length-1];
+console.log(stringLength);
+console.log(firstElement);
+console.log(lastElement);
+
+/* 34. Cторона квадрата равна 10.
+ По середине квадрата проведена линия, разделяющая квадрат на 2 прямоугольника.
+  Найдите и выведите периметр и площадь одного из получившихся прямоугольников.*/
+let squareSide = 10;
+let rectangularPerimeter = (squareSide + squareSide / 2 ) * 2;
+let rectangularSquare = squareSide + squareSide / 2;
+console.log(rectangularPerimeter);
+console.log(rectangularSquare);
+
+
+/* 35. Create 3 variables: one String type, one boolean and last one number.
+ Check the type of each variable. */
+ let string1 = "House";
+ let boolean1 = true;
+ let number1 = 9;
+
+ console.log(typeof string1);
+ console.log(typeof boolean1);
+ console.log(typeof number1);
+
+/* 36. You need  to receive Infinity in the console (using Math)
+and check what type it will be.*/
+let a = 1;
+let b = 0;
+let c = a / b;
+console.log(c);
+console.log(typeof c);
+
+/* 37. Let’s create a program that will convert our age into days.
+ Create a variable age with your age and create a variable sum to multiply 365,
+ Print console. Note ignore leap years, expect only positive integers. */
+
+let age = 25;
+let dayInYear = 365;
+let sum1 = age * 365;
+console.log(sum1);
+
+/* 38. Elon Musk has created a Tesla bot.
+We should greet it. Create a variable greeting and declare
+"Welcome to the earth!" and print it out.*/
+let greeting = "Welcome to the earth!";
+console.log(greeting);
+
+
+/* 39. Write a code where you will find distance,
+where speed = 70, time = 12; */
+
+let speed = 70;
+let time = 12;
+let distance = speed * time;
+console.log(distance);
+
+
+/* 40. Создайте переменную str и присвойте ей значение 'abcde'.
+Обращаясь к отдельным символам этой строки выведите на экран символ 'a', символ 'b',
+ символ 'e’. */
+
+let str = 'abcde';
+let symbolA = str[0];
+let symbolB = str[1];
+let symbolE = str[str.length-1];
+console.log(symbolA);
+console.log(symbolB);
+console.log(symbolE);
+
+/* 41. Напишите скрипт, который считает количество секунд в часе,
+в сутках, в месяце. Выведите результат в консоль. */
+
+let second = 1;
+let minute = second * 60;
+let hour = minute + 60;
+let day = hour * 24;
+let month = day * 31;
+console.log('в часе ' + hour + ' секунд');
+console.log( 'в сутках ' + day + ' секунд');
+console.log( 'в месяце ' + month + ' секунд');
+
+/* 42. Студент решил взять курс. Курс начинается с 1 Сентября по 31 Декабря.
+Каждый день студент занимается по 3 часа. Напишите, сколько всего времени
+студент потратит на весь курс. Выведете результат в консоль.*/
+ let hours = 3;
+ let dayInMonth1 = 30;
+let dayInMonth2 = 31;
+let totalAmountOfHours = 3 * (dayInMonth1 *2 + dayInMonth2 *2 );
+console.log(totalAmountOfHours);
+
+
+/* 43. To burn calories for 1 chocolate Marusya needs to run 2km,
+and to burn calories for 1 ice cream 5km. How far she has to run if
+ she breaks her diet by eating 2,5 chocolates and 3 ice creams.
+ Print the distance in the console.*/
+let dF1Ch = 2;
+let dF1IC = 5;
+let chAmount = 2.5;
+let icAmount = 3;
+let totalDistance = chAmount * dF1Ch + icAmount * dF1IC;
+console.log('She has to run ' + totalDistance + ' km');
+
+/*44. Print in the console “x” from the word “supercalifragilisticexpialidocious”
+through enrichment to the index in this word and what is the length of this word.*/
+
+let str = 'supercalifragilisticexpialidocious';
+console.log(str.length);
+console.log(str[21]);
+
+//didn't started to learn yet
+// let word2 = 'supercalifragilisticexpialidocious';
+// let lengthOfWord = word2.length;
+// console.log(lengthOfWord);
+// for ( i = 0; i >= word2.length -1; i++) {
+//  if(word2[i] === 'x') {
+//   console.log(word2[i]);
+//  }
+// }
+
+
+
+/* 45. Create the variable with the name => sentence  and declare the
+value "Have a nice day". Count the number of letters in a string.
+Console the result. What is the last letter in the line? Console the number of
+letters and the last letter. Console the last letter.*/
+
+let sentence = "Have a nice day";
+let numberOfLetters = sentence.length;
+let lastLetter = sentence[sentence.length -1];
+console.log(numberOfLetters);
+console.log(lastLetter);
+
+/* 46. Write a code that  calculates Volume of the cube with length of side = 7
+and calculate length of all sides. Return statement “The volume of the cube = ...
+ with length of 1 side = … and length of all sides …” -> using ` ${}`.*/
+
+
 // //47. Write a code that picks up the height and base of the triangle and calculate its areas. The area of a triangle is: (base * height) / 2. Don't forget to print the result.
 //
 // //48. Create a String with a value "208". Convert String to number. Find the remainder after division by "5".Output the result to the console.
@@ -299,28 +451,18 @@ Mode
 // //52. Create a two-digit variable and find the remainder of the division on 7. The result of the remainder of the division exponentiates on 3 and finds the type of the result.
 //
 // //53. Создайте переменную с именем s. Присвойте переменной s значение 125. Напишите последовательность команд, в результате которых переменная s будет принимать значения 25, 5, 0.
-// //54. Создайте переменную именем х. Присвойте переменной х значение 12.  Создайте переменную именем у. Присвойте переменной у значение 21.  Напишите последовательность команд, в результате которых:  переменные х и у обменяются своими значениями. Выведите значения переменных х и у в консоль.
-//
-// //55. Инвестиции в бизнес составили I =$5,000,000
-// // Ожидаемые доходы (CFi) за 5 лет составят:
-// // 2021 год – $1,000,000
-// // 2022 год – $1,500,000
-// // 2023 год – $2,000,000
-// // 2024 год – $2,500,000
-// // 2025 год – $3,000,000
-// // Ставка Дисконтирования =20%
-// // Требуется рассчитать:
-// // чистый дисконтированный доход (NPV) за 5 лет,
-// // индекс прибыльности (PI)=NPV/I
-// // Срок окупаемости простой и дисконтированный
-// // Простой( Вывести точную дату когда проект окупится)
-// // Дисконтированный ( Вывести точную дату когда проект окупится)
-// // Месяца обозначить переменными  jan,feb,march…..
-// // Человек пришел в банк через 5 лет после того как открыл депозит. Ставка депозита была неизменна и составляла 10% годовых. Сумма которую он получил в конце срока $100.000.
-// // Какую сумму он положил на счет изначально  и какая сумма у него была на счету в конце каждого года.
-// // Вывести какая процентная ставка применялась бы к начальной сумме депозита чтобы получить сумму на конец каждого года
-// // Задачи оформить  в читаемом виде с выводом всех данных.
-//
+/* 54. Создайте переменную именем х. Присвойте переменной х значение 12.
+  Создайте переменную именем у. Присвойте переменной у значение 21.
+  Напишите последовательность команд, в результате которых:  переменные х и у
+  обменяются своими значениями. Выведите значения переменных х и у в консоль.*/
+
+let x = 12;
+let y = 21;
+[x , y] = [y , x];
+console.log(sum);
+
+
+ 
 // //56. Длина прямоугольника 28 см, а ширина на 6 см меньше. Найти периметр и площадь треугольника.
 // // Создать 4 переменные: length - длина прямоугольника, width - ширина, perimetr - периметр, square - площадь. Присвоить значение 28 для переменной length. Остальные значения нужно будет посчитать и вывести в консоль)
 // // Иван сделал из проволоки квадрат со стороной 12 см. Если из той же проволоки он сделает прямоугольник с шириной 6 см, то какова будет его длина?
