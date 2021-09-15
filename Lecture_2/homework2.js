@@ -31,18 +31,26 @@
 // lunch = ((pizza && tomatos) ||(pasta && capers && !tomatos));
 // console.log("case 2: " + lunch);
 
-//2.
-
-// let res = (a > b) && b != 0 || a >= 0;
-
-//case 1: (Number a is bigger than number b) and b is not equal to 0 or a is not negative number; => the result is true
-// console.log(" case 1: " + res);
-
-//   case 2: (Number a is a positive number or number b is a positive number) or b is not equal to 0 and a is equal to 7;
-// => the result is true
-
+/* 2.
+case 1: (Number a is bigger than number b) and b is not equal to 0
+or a is not negative number; console.log(" case 1: " + res);  => the result is true */
 let a = 5;
 let b = 7;
+let res = (a > b) && b != 0 || a >= 0;
+console.log(" case 1: " + res);
+or
+console.log(" case 1: " + ((a > b) && b != 0 || a >= 0));
+How this was resolved step by step including order of precedence:
+
+1) (a > b)               ------> false (result of comparison);
+2) ' case 1: ' + false   ------>  "case 1: false" result of concatination , becase string and sign of addition give concatination
+3) true && true          ------> true   true && true || a >= 0
+4)  a >= 0                ------> true
+5) true && true           ------> true
+
+/* case 2: (Number a is a positive number or number b is a positive number)
+or b is not equal to 0 and a is equal to 7; => the result is true */
+
 let res1 = ((a >= 0 || b >= 0) || (b !== 0 && a == 7));
 console.log("case 2: " + res1);
 

@@ -7,6 +7,20 @@
 
 
 
+two !! before nuber ex: 6 transfer to boolean
+console.log(!!6); //in console will be true
+console.log(!!0); //in console will be false
+console.log(!!1); //in console will be true
+//when solving problems with operations always check order of precedence
+//https://www.dummies.com/web-design-development/javascript-operator-precedence/
+
+ empty string = true;
+ let a = ' '; // true
+ let b = ""; // false
+
+ console.log(a);  //result true
+console.log(b); //result false
+
 // 1) console.log( true || (true) && false ); //true:
 // если есть скобки, то 1)действие в скобках; 2)после них направо, а потом в начало.
 
