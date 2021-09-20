@@ -1,18 +1,17 @@
 // LESSON 3 HOMEWORK
 
-// #1
-// fix the code so that the console displays: "undefined"
+/* #1
+fix the code so that the console displays: "undefined" */
 
-// let a;
-// let b = 3;
-// console.log(a);
+let a;
+let b = 3;
+ console.log("" + a); // in console will be "undefined"
 
 
-// #2
-// Create the variable with the name name, and declare the value - any name of your choise;
-
+/* #2
+Create the variable with the name name, and declare the value -
+any name of your choice; */
 // Create the variable with the name age, and declare the any value from the range [1; 80];
-
 // Create the variables with the names: isChild; isTeenager; isAdult.
 // These variables should contain boolean values, the age must be taken
 // into account: child: [1; 10] ,  teenager: [11; 18] ,  adult: 19 and over.
@@ -20,12 +19,24 @@
 // print 3 phrases to the console, whether the person is a child,
 // or a teenager, or an adult, according this form: "Is Anna a child? false"
 
+let name = "Anna";
+let age = 36;
+let isChild = (age >= 1) && (age <= 10);
+let isTeenager = (age >= 11) && (age <= 18);
+let isAdult = (age >= 18);
+console.log(`Is ${name} a child ? ${isChild}`);
+//or
+console.log("Is Anna a child ? "  + isChild);
+console.log("Is Anna a teenager ? "  + isTeenager);
+console.log("Is Anna an adult ? "  + isAdult);
 
 // #3
 // Задайте переменную х;
 // Назначьте переменную typeX, равную типу данных х;
 // Выведите в консоль тип переменной typeX.
-
+let x;
+let typeX = typeof x;
+console.log(typeof typeX); //in console will be string
 
 // #4 Склад магазина получил 20 утюгов, 15 микроволновок, 12 кофварок и кастрюли.
 // Создайте переменные с подходящими названиями и переменную для общего
