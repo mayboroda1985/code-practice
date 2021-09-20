@@ -38,3 +38,37 @@ console.log(b); //result false
 //
 
 // Для третьего примера сначала смотрим действие в скобках (в нашем случае true) далее по приоритету проверяете true && false (всегда возвращает false), а потом уже проверяем false || false (возвращает нам false) и в итоге наше утверждение true != false верно и возвращает нам true
+
+
+//AND &&
+
+// console.log( true && true ); // true
+// console.log(5 > 2 && 3 == '3');
+// console.log(5 != 2 && 3 == '3');
+// console.log(2 >= 2 && 3 !== '3');
+
+
+// console.log( false && true ); // false
+// console.log(5 < 2 && 3 == '3');
+// console.log(5 == 2 && 3 == '3');
+// console.log(2 > 2 && 3 !== '3');
+
+// console.log( true && false ); // false
+// console.log(5 > 2 && 3 > '3');
+// console.log(5 != 2 && 3 === '3');
+// console.log(2 >= 2 && 3 < '3');
+
+// console.log( false && false ); // false
+// console.log(5 < 2 && 3 > '3');
+// console.log(5 == 2 && 3 === '3');
+// console.log(2 > 2 && 3 < '3');
+
+//OR ||
+// console.log( true || true ); // true
+// console.log(5 < 2 || 3 == '3');
+// console.log( false || true ); // true
+// console.log(5 < 2 || 3 == '3');
+// console.log( true || false ); // true
+// console.log(5 != 2 || 3 === '3');
+// console.log( false || false ); // false
+// console.log(2 > 2 || 3 < '3');
