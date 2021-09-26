@@ -30,28 +30,113 @@
 // TAX 8.75%                       2.71 <= Tax on total minus discount
 // TOTAL:                         33.68 <= Total after tax and discount
 // ------------------------------------
+//Add a check for a price at the end
+//if total is bigger that $30, print 'You do not have enough money on your card,
+//you need extra ${calculate here how much you need extra}'
+// else print 'Have a nice day!'
 
-console.log('----------------------------');
-console.log('SaveMart Receipt \n 123 Main Street \n San Jose CA 95135');
+let receipt = "------------------------------------";
+// let space = "                                              ";
+console.log(receipt);
+let nameOfTheStore = "SaveMart Receipt";
+console.log(nameOfTheStore);
+let storeAddress = "123 Main Street San Jose CA 95135";
+console.log('123 Main Street \n San Jose CA 95135');
+let brandOfBread = "Oven Joy Bread";
+let ovenJoyBreadPrice = 0.99;
+let ovenJoyBreadQuantity = (2.0).toFixed(1);
+let ovenJoyBreadTotalPrice = ovenJoyBreadPrice * ovenJoyBreadQuantity;
+console.log(`${brandOfBread}               ${ovenJoyBreadTotalPrice} \n   ${ovenJoyBreadPrice} at ${ovenJoyBreadQuantity}`);
+let brandOfMilk = "Lucerne Milk";
+let lucerneMilkPrice = 2.29;
+let lucerneMilkQuantity = (1.0).toFixed(1);
+let lucerneMilkTotalPrice = lucerneMilkPrice * lucerneMilkQuantity;
+console.log(`${brandOfMilk}                 ${lucerneMilkTotalPrice} \n   ${lucerneMilkPrice} at ${lucerneMilkQuantity}`);
+let brandOfBeans = "Hormel Chili with Beans";
+let beanPrice = 1.29;
+let beanQuantity = (3.0).toFixed(1);
+let beanTotalPrice = beanPrice * beanQuantity;
+console.log(`${brandOfBeans}      ${beanTotalPrice} \n   ${beanPrice} at ${beanQuantity}`);
+let beerBrand = "Blue Moon";
+let beerBrandSize = "12-pack"
+let beerPrice = 12.99;
+let beerBoxQuantity = (1.0).toFixed(1)
+let beerTotalPrice = beerPrice * beerBoxQuantity;
+console.log(`${beerBrandSize} ${beerBrand}           ${beerTotalPrice}  \n  ${beerPrice} at ${beerBoxQuantity}`);
+let orangesBrand = "Organic Navel Oranges";
+let orangesPricePerKg = 1.49;
+let oranagesTotalWeightInKg = (2.5).toFixed(1);
+let orangesTotalPrice = orangesPricePerKg * oranagesTotalWeightInKg;
+let orangesTotalPriceRounded = (+(orangesTotalPrice).toFixed(2));
+console.log(`${orangesBrand}       ${orangesTotalPriceRounded} \n  ${orangesPricePerKg} at ${oranagesTotalWeightInKg}`);
 
-let bread = "Oven Joy Bread";
-let breadAmount = 2;
-let breadPrice = 0.99;
-let breadTotalPrice = breadAmount * breadPrice;
-console.log(bread + '          ' + breadTotalPrice);
-//etc...
+let applesBrand = "Granny Smith Apples";
+let applesPricePerKg = 1.09;
+let applesTotalWeightInKg = (1.6).toFixed(1);
+let applesTotalPrice = applesPricePerKg * applesTotalWeightInKg;
+let applesTotalPriceRounded = +((applesTotalPrice).toFixed(2));
+console.log(`${applesBrand}          ${applesTotalPriceRounded} \n  ${applesPricePerKg} at ${applesTotalWeightInKg}`);
+
+let yogurtBrand = "Tillamook Greek Yogurt";
+let yogurtSinglePrice = (1.0).toFixed(1);
+let yogurtQuantity = (6.0).toFixed(1);
+let yogurtTotalPrice = yogurtSinglePrice * yogurtQuantity;
+let yogurtTotalPriceRounded = +((yogurtTotalPrice).toFixed(1));
+// console.log((yogurtSinglePrice).toFixed(1));
+// console.log((yogurtQuantity).toFixed(1));
+// console.log((yogurtTotalPrice).toFixed(1));
+console.log(`${yogurtBrand}        ${yogurtTotalPriceRounded} \n    ${yogurtSinglePrice} at ${yogurtQuantity}`);
 
 
+let totalReceipt = "SUBTOTAL:";
+
+let totalPrice = (ovenJoyBreadTotalPrice + lucerneMilkTotalPrice + beanTotalPrice + beerTotalPrice + orangesTotalPriceRounded + applesTotalPriceRounded + yogurtTotalPriceRounded).toFixed(2);
+
+console.log(` ${totalReceipt}                   ${totalPrice}`);
+
+let saving = "CLUBCARD Saving 5%";
+let discount5Percent = +(totalPrice * 0.05).toFixed(2);
+console.log(`${saving}            ${discount5Percent}`);
+
+
+let tax = "TAX 8.75%";
+let taxOnTotal = +((totalPrice - discount5Percent ) * 8.75 / 100).toFixed(2);
+console.log(taxOnTotal);
+console.log(`${tax}                     ${taxOnTotal}`);
+let total = "TOTAL:";
+let totalOnAll = (totalPrice - discount5Percent) + taxOnTotal;
+
+console.log(totalOnAll);
+console.log(`${total}                       ${totalOnAll}`);
+
+// console.log(ovenJoyBreadTotalPrice);
+// console.log(lucerneMilkTotalPrice);
+// console.log(beanTotalPrice);
+// console.log(beerTotalPrice);
+// console.log(orangesTotalPriceRounded);
+// console.log(applesTotalPriceRounded);
+// console.log(yogurtTotalPriceRounded);
 
 //Add a check for a price at the end
 //if total is bigger that $30, print 'You do not have enough money on your card,
 //you need extra ${calculate here how much you need extra}'
 // else print 'Have a nice day!'
 
+let extra = 3.68;
+if (totalOnAll > 30) {
+    console.log(`You do not have enough money on your card, you need extra ${extra}`);
+} else {
+    console.log('Have a nice day!');
+}
+
+
+
+
+
 
 
 //codewars
-//https://www.codewars.com/kata/52ceafd1f235ce81aa00073a
+//1. https://www.codewars.com/kata/52ceafd1f235ce81aa00073a
 //https://www.codewars.com/kata/55192f4ecd82ff826900089e
 //https://www.codewars.com/kata/56d6c333c9ae3fc32800070f
 //https://www.codewars.com/kata/53af2b8861023f1d88000832
