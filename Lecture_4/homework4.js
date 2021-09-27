@@ -35,6 +35,7 @@
 //you need extra ${calculate here how much you need extra}'
 // else print 'Have a nice day!'
 
+solved in jsbin : https://jsbin.com/yixoduxolu/edit?js,console
 let receipt = "------------------------------------";
 // let space = "                                              ";
 console.log(receipt);
@@ -136,15 +137,71 @@ if (totalOnAll > 30) {
 
 
 //codewars
-//1. https://www.codewars.com/kata/52ceafd1f235ce81aa00073a
-//https://www.codewars.com/kata/55192f4ecd82ff826900089e
-//https://www.codewars.com/kata/56d6c333c9ae3fc32800070f
-//https://www.codewars.com/kata/53af2b8861023f1d88000832
-//https://www.codewars.com/kata/calculate-two-peoples-individual-ages
+//done https://www.codewars.com/kata/52ceafd1f235ce81aa00073a
+//done https://www.codewars.com/kata/55192f4ecd82ff826900089e
+//done https://www.codewars.com/kata/56d6c333c9ae3fc32800070f
+//done https://www.codewars.com/kata/53af2b8861023f1d88000832
+!!!! https://www.codewars.com/kata/calculate-two-peoples-individual-ages
 //hint: in the end use => return [age2, age1]
-//https://www.codewars.com/kata/554003323fd6af1c4200004e
-//https://www.codewars.com/kata/is-n-divisible-by-x-and-y
-//https://www.codewars.com/kata/is-this-a-triangle
+
+Create a function that takes in the sum and age difference of two people, calculates their individual ages, and returns a pair of values (oldest age first) if those exist or null/None if:
+
+sum < 0
+difference < 0
+Either of the calculated ages come out to be negative
+
+Answer : don't know'
+
+
+function getAges(sum,difference){
+    let age2 ;
+    let age1 ;
+    if (sum > 0 && difference > 0) {
+        return  [age2, age1] ;
+    } else if (sum < 0 && difference < 0) {
+        return  null ;
+    }
+
+};
+
+
+
+//Done https://www.codewars.com/kata/554003323fd6af1c4200004e
+function isOdd(n) {
+    if ( n % 1 != 0 ) {
+        return false;
+    } else {
+        return n % 2 != 0 ;
+    }
+
+}
+//done https://www.codewars.com/kata/is-n-divisible-by-x-and-y
+
+function isDivisible(n, x, y) {
+    if ( n % x ==0 && n % y == 0) {
+        return true
+    }else {
+        return false
+    }
+}
+
+// done https://www.codewars.com/kata/is-this-a-triangle
+function isTriangle(a,b,c)  {
+    if (a <= 0 || b <= 0 || c <= 0 ) {
+        return false;
+    }
+
+    if (a+b > c && a+c > b && c+b > a) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+
+
+
+
 //https://www.codewars.com/kata/rock-paper-scissors
 //https://www.codewars.com/kata/l1-set-alarm
 
@@ -154,7 +211,54 @@ if (totalOnAll > 30) {
 //https://www.codewars.com/kata/55afed09237df73343000042
 
 //https://www.codewars.com/kata/55cbd4ba903825f7970000f5
-//https://www.codewars.com/kata/56368f37d464c0a43c00007f
+https://www.codewars.com/kata/56368f37d464c0a43c00007f
+
+    A variation of determining leap years, assuming only integers are used and years can be negative and positive.
+
+    Write a function which will return the days in the year and the year entered in a string. For example 2000, entered as an integer, will return as a string 2000 has 366 days
+
+There are a few assumptions we will accept the year 0, even though there is no year 0 in the Gregorian Calendar.
+
+    Also the basic rule for validating a leap year are as follows
+
+Most years that can be divided evenly by 4 are leap years.
+
+    Exception: Century years are NOT leap years UNLESS they can be evenly divided by 400.
+
+So the years 0, -64 and 2016 will return 366 days. Whilst 1974, -10 and 666 will return 365 days.
+
+    Answer:
+leap year 366 days, not leap year 365 days
+
+function yearDays(year)
+{
+    if (year % 400 == 0) {
+        return year + ` has 366 days`;
+    }
+    if (year % 100 == 0) {
+        return year + ` has 365 days`;
+    }
+    else if (year % 4 == 0) {
+        return year + ` has 366 days`;
+    } else {
+        return year + ` has 365 days`;
+    }
+}
+
+or
+
+function yearDays(year)
+{ //evenly divisible by 4 = a leap year.
+    if(year % 400 === 0) {
+        return year + ' has 366 days';
+    }
+    else if(year % 4 === 0 && year % 100 !== 0) { //centuries
+        return year + ' has 366 days';
+    }
+    else {
+        return year + ' has 365 days';
+    }
+}
 //https://www.codewars.com/kata/determine-offspring-sex-based-on-genes-xx-and-xy-chromosomes
 //https://www.codewars.com/kata/57089707fe2d01529f00024a
 //https://www.codewars.com/kata/57158fb92ad763bb180004e7
@@ -170,9 +274,29 @@ if (totalOnAll > 30) {
 //https://www.codewars.com/kata/simple-multiplication
 //https://www.codewars.com/kata/5875b200d520904a04000003
 //https://www.codewars.com/kata/5a6663e9fd56cb5ab800008b
-//https://www.codewars.com/kata/5ab6538b379d20ad880000ab
-//https://www.codewars.com/kata/525e5a1cb735154b320002c8
-//https://www.codewars.com/kata/convert-boolean-values-to-strings-yes-or-no
+// done https://www.codewars.com/kata/5ab6538b379d20ad880000ab
+
+const areaOrPerimeter = function(l , w) {
+    let  area = l * w;
+    let perimeter = 2 * (l + w);
+    if ( l == w ) {
+        return area;
+    } else {
+        return perimeter;
+    }
+};
+
+!!!!!!!!!!!!//https://www.codewars.com/kata/525e5a1cb735154b320002c8
+// done https://www.codewars.com/kata/convert-boolean-values-to-strings-yes-or-no
+
+function boolToWord( bool ){
+    if (bool == true) {
+        return 'Yes';
+    } else {
+        return 'No';
+    }
+}
+
 //https://www.codewars.com/kata/keep-up-the-hoop
 //https://www.codewars.com/kata/be-concise-i-the-ternary-operator
 //https://www.codewars.com/kata/101-dalmatians-squash-the-bugs-not-the-dogs
@@ -181,12 +305,69 @@ if (totalOnAll > 30) {
 //https://www.codewars.com/kata/5977387e131c07082b000098
 //https://www.codewars.com/kata/can-we-divide-it
 //https://www.codewars.com/kata/5a6d3bd238f80014a2000187
-//https://www.codewars.com/kata/5dd259444228280032b1ed2a
+https://www.codewars.com/kata/5dd259444228280032b1ed2a
+
+
+
 //https://www.codewars.com/kata/get-planet-name-by-id
 //https://www.codewars.com/kata/5296455e4fe0cdf2e000059f
 //https://www.codewars.com/kata/572059afc2f4612825000d8a
 //https://www.codewars.com/kata/basic-mathematical-operations
 //https://www.codewars.com/kata/switch-it-up
+When provided with a number between 0-9, return it in words.
+
+Input :: 1
+
+Output :: "One".
+
+If your language supports it, try using a switch statement.
+
+    Answer
+    function switchItUp(number){
+        switch (number) {
+            case 0:
+                return "Zero";
+                break;
+
+            case 1:
+                return "One";
+                break;
+
+            case 2:
+                return "Two";
+                break;
+
+            case 3:
+                return "Three";
+                break;
+
+            case 4:
+                return "Four";
+                break;
+
+            case 5:
+                return "Five";
+                break;
+
+            case 6:
+                return "Six";
+                break;
+
+            case 7:
+                return "Seven";
+                break;
+
+            case 8:
+                return "Eight";
+                break;
+
+            case 9:
+                return "Nine";
+                break;
+        }
+
+    }
+
 //https://www.codewars.com/kata/simple-calculator
 //https://www.codewars.com/kata/59ca8246d751df55cc00014c/train/javascript
 //https://www.codewars.com/kata/55685cd7ad70877c23000102/train/javascript
