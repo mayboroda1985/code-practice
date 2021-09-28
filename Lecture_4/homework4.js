@@ -203,6 +203,14 @@ function isTriangle(a,b,c)  {
 
 
 //https://www.codewars.com/kata/rock-paper-scissors
+watch on 1:30 min
+const rps = (p1, p2) => {
+
+    if (p1  == p2) {
+        return "Draw!"
+    } else if (p1  == "scissors" && p == "paper"
+        };
+or on 1;32 second option
 //https://www.codewars.com/kata/l1-set-alarm
 
 //https://www.codewars.com/kata/can-we-divide-it
@@ -259,13 +267,131 @@ function yearDays(year)
         return year + ' has 365 days';
     }
 }
-//https://www.codewars.com/kata/determine-offspring-sex-based-on-genes-xx-and-xy-chromosomes
-//https://www.codewars.com/kata/57089707fe2d01529f00024a
-//https://www.codewars.com/kata/57158fb92ad763bb180004e7
-//https://www.codewars.com/kata/training-js-number-6-basic-data-types-boolean-and-conditional-statements-if-dot-else
-//https://www.codewars.com/kata/whats-the-real-floor
-//https://www.codewars.com/kata/5761a717780f8950ce001473
-//https://www.codewars.com/kata/calculate-bmi
+// done https://www.codewars.com/kata/determine-offspring-sex-based-on-genes-xx-and-xy-chromosomes
+
+// done https://www.codewars.com/kata/57089707fe2d01529f00024a
+function checkAlive (health) {
+    if (health <= 0) {
+        return false;
+    } else {
+        return true;
+    }
+}
+
+or
+function checkAlive (health) {
+
+    return health <= 0 ? false : true;
+
+}
+
+// done https://www.codewars.com/kata/57158fb92ad763bb180004e7
+function rainAmount(mm){
+    function rainAmount(mm){
+        if (mm >= 40) {
+            return "Your plant has had more than enough water for today!";
+        } else if (mm <= 40) {
+            return `You need to give your plant ${40-mm}mm of water`;
+        } else {
+            return
+        }
+    }
+
+    or
+    function rainAmount(mm){
+        if ( mm < 40) {
+            return "You need to give your plant " + (40 - mm) + "mm of water"
+        } else {
+            return "Your plant has had more than enough water for today!"
+        }
+    }
+
+    or
+
+    function rainAmount(mm){
+        return mm < 40 ? `You need to give your plant ${40 - mm}mm of water` : "Your plant has had more than enough water for today!"
+    }
+
+
+????//done https://www.codewars.com/kata/training-js-number-6-basic-data-types-boolean-and-conditional-statements-if-dot-else
+
+    function trueOrFalse(val){
+        if(val)return 'true';
+        else return 'false';
+    }
+
+
+!!!!//https://www.codewars.com/kata/whats-the-real-floor
+
+
+!!!//https://www.codewars.com/kata/5761a717780f8950ce001473
+    var  calculateAge=(b,c)=>{
+        r = c-b;
+        switch(true) {
+            case (r>1):    return "You are " + r + " years old."; break;
+            case (r===1):  return "You are 1 year old."; break;
+            case (r===0):  return "You were born this very year!"; break;
+            case (r===-1): return "You will be born in 1 year."; break;
+            case (r<-1):   return "You will be born in " + (-r) + " years."; break;
+        }
+    }
+or
+    function  calculateAge(m, n) {
+        if(m == n) return 'You were born this very year!';
+        var year = Math.abs(m-n) == 1 ? 'year' : 'years';
+        if(m < n) return "You are "+(n-m)+' '+year+' old.';
+        if(m > n) return "You will be born in "+(-n+m)+' '+year+'.';
+    }
+
+    or
+    function  calculateAge(birthYear,year) {
+        age = year-birthYear;
+        if(age==1)
+            return "You are 1 year old.";
+        else if(age===-1)
+            return "You will be born in 1 year."
+        else if(age>0)
+            return "You are " + age + " years old.";
+        else if(age<0) {
+            age = birthYear-year;
+            return  "You will be born in " + age + " years."
+        }
+        else {
+            return "You were born this very year!";
+        }
+    }
+
+// done https://www.codewars.com/kata/calculate-bmi
+
+    function bmi(weight, height) {
+        let bmi = weight /  height ** 2
+        if (bmi <= 18.5) {
+            return "Underweight";
+        } else if (bmi <= 25.0) {
+            return "Normal";
+        } else if (bmi <= 30.0) {
+            return "Overweight";
+        } else if ( bmi > 30 ) {
+            return "Obese";
+        }
+    }
+
+    or
+
+    function bmi(weight, height) {
+        var formula = (weight / Math.pow(height, 2));
+        switch (true) {
+            case formula <=18.5:
+                return 'Underweight';
+            case formula <=25.0:
+                return 'Normal';
+            case formula <=30:
+                return 'Overweight';
+            default:
+                return 'Obese';
+
+        }
+    }
 //https://www.codewars.com/kata/57b58827d2a31c57720012e8
 //https://www.codewars.com/kata/57d448c6ba30875437000138
 //https://www.codewars.com/kata/57e921d8b36340f1fd000059
@@ -285,6 +411,8 @@ const areaOrPerimeter = function(l , w) {
         return perimeter;
     }
 };
+
+
 
 !!!!!!!!!!!!//https://www.codewars.com/kata/525e5a1cb735154b320002c8
 // done https://www.codewars.com/kata/convert-boolean-values-to-strings-yes-or-no
@@ -309,11 +437,45 @@ https://www.codewars.com/kata/5dd259444228280032b1ed2a
 
 
 
-//https://www.codewars.com/kata/get-planet-name-by-id
+//
+// done https://www.codewars.com/kata/get-planet-name-by-id
+// the same as above? https://www.codewars.com/kata/515e188a311df01cba000003/train/javascript
+        function getPlanetName(id){
+            var name;
+            switch(id){
+                case 1:
+                    name = 'Mercury'
+                    break;
+                case 2:
+                    name = 'Venus'
+                    break;
+                case 3:
+                    name = 'Earth'
+                    break;
+                case 4:
+                    name = 'Mars'
+                    break;
+                case 5:
+                    name = 'Jupiter'
+                    break;
+                case 6:
+                    name = 'Saturn'
+                    break;
+                case 7:
+                    name = 'Uranus'
+                    break;
+                case 8:
+                    name = 'Neptune'
+            }
+
+            return name;
+        }
+
 //https://www.codewars.com/kata/5296455e4fe0cdf2e000059f
 //https://www.codewars.com/kata/572059afc2f4612825000d8a
 //https://www.codewars.com/kata/basic-mathematical-operations
-//https://www.codewars.com/kata/switch-it-up
+//done https://www.codewars.com/kata/switch-it-up
+// the same as above https://www.codewars.com/kata/5808dcb8f0ed42ae34000031/train/javascript
 When provided with a number between 0-9, return it in words.
 
 Input :: 1
@@ -323,7 +485,7 @@ Output :: "One".
 If your language supports it, try using a switch statement.
 
     Answer
-    function switchItUp(number){
+        function switchItUp(number){
         switch (number) {
             case 0:
                 return "Zero";
@@ -373,32 +535,156 @@ If your language supports it, try using a switch statement.
 //https://www.codewars.com/kata/55685cd7ad70877c23000102/train/javascript
 //https://www.codewars.com/kata/5c374b346a5d0f77af500a5a/train/javascript
 //https://www.codewars.com/kata/5834fec22fb0ba7d080000e8/train/javascript
-//https://www.codewars.com/kata/515e188a311df01cba000003/train/javascript
+
 //https://www.codewars.com/kata/57356c55867b9b7a60000bd7/train/javascript
-//https://www.codewars.com/kata/5808dcb8f0ed42ae34000031/train/javascript
+//
 //https://www.codewars.com/kata/5810085c533d69f4980001cf/train/javascript
 //Codewars:
-//https://www.codewars.com/kata/53da3dbb4a5168369a0000fe/train/javascript
-//https://www.codewars.com/kata/55cbd4ba903825f7970000f5/train/javascript
+//done https://www.codewars.com/kata/53da3dbb4a5168369a0000fe/train/javascript
+        function even_or_odd(number) {
+            if (number % 2 == 0) {
+                return "Even";
+            } else {
+                return "Odd";
+            }
+        }
+//done https://www.codewars.com/kata/55cbd4ba903825f7970000f5/train/javascript
+        function getGrade (s1, s2, s3) {
+            averageGrade = (s1 + s2 + s3) / 3;
+            if (averageGrade >= 90 &&  averageGrade <= 100) {
+                return "A";
+            } else if (averageGrade >= 80 &&  averageGrade < 90) {
+                return "B";
+
+            } else if (averageGrade >= 70 &&  averageGrade < 80) {
+                return "C";
+            } else if (averageGrade >= 60 &&  averageGrade < 70) {
+                return "D";
+            } else if (averageGrade >= 0) {
+                return "F";
+            }
+        }
+
+        or
+
+        function getGrade (s1, s2, s3) {
+            avg = (s1+s2+s3)/3;
+            if (avg < 60)  return "F";
+            else if (avg < 70) return "D";
+            else if (avg < 80) return "C";
+            else if (avg < 90) return "B";
+            else return "A";
+        }
+
+        or
+        function getGrade (s1, s2, s3) {
+            var s = (s1 + s2 + s3) / 3
+            return s >= 90 ? "A" : s >= 80 ? "B" : s >= 70 ? "C" : s >= 60 ? "D" : "F"
+        }
+
+        or
+        function getGrade(...scores) {
+            let average = scores.reduce((a, b) => a + b) / scores.length
+
+            if (average >= 90) return 'A'
+            else if (average >= 80) return 'B'
+            else if (average >= 70) return 'C'
+            else if (average >= 60) return 'D'
+            else return 'F'
+        }
 //https://www.codewars.com/kata/56368f37d464c0a43c00007f/solutions/javascript //switch
-//https://www.codewars.com/kata/56530b444e831334c0000020/train/javascript
-//https://www.codewars.com/kata/57089707fe2d01529f00024a/train/javascript
-//https://www.codewars.com/kata/57158fb92ad763bb180004e7/train/javascript //use ``
-//https://www.codewars.com/kata/571f832f07363d295d001ba8/train/javascript
-//https://www.codewars.com/kata/574b3b1599d8f897470018f6/train/javascript
-//https://www.codewars.com/kata/5761a717780f8950ce001473/train/javascript
-//codewars.com/kata/57a429e253ba3381850000fb/train/javascript
-//https://www.codewars.com/kata/57b58827d2a31c57720012e8/train/javascript //toFixed(2)
-//https://www.codewars.com/kata/57f022a6cba9da84a3000095
-//https://www.codewars.com/kata/583710ccaa6717322c000105/train/javascript
-//https://www.codewars.com/kata/5875b200d520904a04000003/train/javascript
-//https://www.codewars.com/kata/5ab6538b379d20ad880000ab/train/javascript
-//https://www.codewars.com/kata/52ceafd1f235ce81aa00073a/train/javascript
-//https://www.codewars.com/kata/55192f4ecd82ff826900089e/train/javascript
-//https://www.codewars.com/kata/55cb632c1a5d7b3ad0000145/train/javascript
+//done https://www.codewars.com/kata/56530b444e831334c0000020/train/javascript
+        function chromosomeCheck(sperm) {
+            if (sperm == 'XX') {
+                return "Congratulations! You're going to have a daughter.";
+            } else {
+                return "Congratulations! You're going to have a son.";
+            }
+        }
+//done https://www.codewars.com/kata/57089707fe2d01529f00024a/train/javascript
+
+        function checkAlive (health) {
+            if (health <= 0) {
+                return false;
+            } else {
+                return true;
+            }
+        }
+//done https://www.codewars.com/kata/57158fb92ad763bb180004e7/train/javascript //use ``
+        function rainAmount(mm){
+            if (mm >= 40) {
+                return "Your plant has had more than enough water for today!";
+            } else if (mm <= 40) {
+                return `You need to give your plant ${40-mm}mm of water`;
+            } else {
+                return
+            }
+        }
+//done https://www.codewars.com/kata/571f832f07363d295d001ba8/train/javascript
+        function trueOrFalse(val){
+            if(val)return 'true';
+            else return 'false';
+        }
+???//https://www.codewars.com/kata/574b3b1599d8f897470018f6/train/javascript // floor
+??//https://www.codewars.com/kata/5761a717780f8950ce001473/train/javascript //How old will I be in 2099
+// done codewars.com/kata/57a429e253ba3381850000fb/train/javascript  //calculate bmi
+        function bmi(weight, height) {
+            let bmi = weight /  height ** 2
+            if (bmi <= 18.5) {
+                return "Underweight";
+            } else if (bmi <= 25.0) {
+                return "Normal";
+            } else if (bmi <= 30.0) {
+                return "Overweight";
+            } else if ( bmi > 30 ) {
+                return "Obese";
+            }
+        }
+//https://www.codewars.com/kata/57b58827d2a31c57720012e8/train/javascript //toFixed(2)  //Fuel Calculator
+???//https://www.codewars.com/kata/57f022a6cba9da84a3000095  //Return 17
+???//https://www.codewars.com/kata/583710ccaa6717322c000105/train/javascript  //Simple multiplication
+            function simpleMultiplication(number) {
+                if (number * 8) {
+                    return "Even";
+                } else if (number * 9) {
+
+                    return "Odd";
+
+                }
+            }
+
+//https://www.codewars.com/kata/5875b200d520904a04000003/train/javascript //Will there be enough space?
+//done https://www.codewars.com/kata/5ab6538b379d20ad880000ab/train/javascript
+            const areaOrPerimeter = function(l , w) {
+                let  area = l * w;
+                let perimeter = 2 * (l + w);
+                if ( l == w ) {
+                    return area;
+                } else {
+                    return perimeter;
+                }
+            };
+//done https://www.codewars.com/kata/52ceafd1f235ce81aa00073a/train/javascript //Plural
+        function plural(n) {
+            if (n == 1) {
+                return false;
+            } else {
+                return true;
+            }
+        }
+//https://www.codewars.com/kata/55192f4ecd82ff826900089e/train/javascript //watermelon
+        function divide(weight){
+            if (weight > 2 && weight % 2 == 0) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+
+//https://www.codewars.com/kata/55cb632c1a5d7b3ad0000145/train/javascript //Keep up the hoop
 //https://www.codewars.com/kata/chuck-norris-vii-true-or-false-beginner
 //https://www.codewars.com/kata/59ca8246d751df55cc00014c/train/javascript
-//https://www.codewars.com/kata/55685cd7ad70877c23000102/train/javascript
+//https://www.codewars.com/kata/55685cd7ad70877c23000102/train/javascript //return negative
 //https://www.codewars.com/kata/5c374b346a5d0f77af500a5a/train/javascript
 //https://www.codewars.com/kata/5834fec22fb0ba7d080000e8/train/javascript
 
@@ -413,6 +699,15 @@ If your language supports it, try using a switch statement.
 
 
 
+
+GCD sum  form coadwars
+    function solve (s,g){
+        if (s%g !==0){
+        return -1;
+        } else {
+        return [g, s-g];
+        }
+    }
 
 
 
