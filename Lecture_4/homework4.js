@@ -202,15 +202,19 @@ function isTriangle(a,b,c)  {
 
 
 
-//https://www.codewars.com/kata/rock-paper-scissors
-watch on 1:30 min
+//done https://www.codewars.com/kata/rock-paper-scissors
 const rps = (p1, p2) => {
 
     if (p1  == p2) {
         return "Draw!"
-    } else if (p1  == "scissors" && p == "paper"
-        };
-or on 1;32 second option
+    } else if ((p1  == "scissors" && p2 == "paper") || (p1  == "paper" && p2 == "rock")|| (p1  == "rock" && p2 == "scissors"))
+    {
+        return "Player 1 won!";
+    } else {
+        return "Player 2 won!";
+    }
+}
+
 //https://www.codewars.com/kata/l1-set-alarm
 
 //https://www.codewars.com/kata/can-we-divide-it
@@ -321,7 +325,7 @@ function rainAmount(mm){
     }
 
 
-!!!!//https://www.codewars.com/kata/whats-the-real-floor
+
 
 
 !!!//https://www.codewars.com/kata/5761a717780f8950ce001473
@@ -531,6 +535,8 @@ If your language supports it, try using a switch statement.
     }
 
 //https://www.codewars.com/kata/simple-calculator
+
+
 //https://www.codewars.com/kata/59ca8246d751df55cc00014c/train/javascript
 //https://www.codewars.com/kata/55685cd7ad70877c23000102/train/javascript
 //https://www.codewars.com/kata/5c374b346a5d0f77af500a5a/train/javascript
@@ -625,7 +631,21 @@ If your language supports it, try using a switch statement.
             if(val)return 'true';
             else return 'false';
         }
-???//https://www.codewars.com/kata/574b3b1599d8f897470018f6/train/javascript // floor
+done //https://www.codewars.com/kata/whats-the-real-floor
+        function getRealFloor(n) {
+            if (n <= 0) {
+                return n;
+            } else if ( n < 13) {
+                return n - 1;
+            } else if (n > 13) {
+                return n - 2;
+            }
+        }
+        or
+        function getRealFloor(n) {
+            return n > 13 ? n - 2 : n > 0 ? n - 1 : n;
+        }
+
 ??//https://www.codewars.com/kata/5761a717780f8950ce001473/train/javascript //How old will I be in 2099
 // done codewars.com/kata/57a429e253ba3381850000fb/train/javascript  //calculate bmi
         function bmi(weight, height) {
@@ -641,7 +661,27 @@ If your language supports it, try using a switch statement.
             }
         }
 //https://www.codewars.com/kata/57b58827d2a31c57720012e8/train/javascript //toFixed(2)  //Fuel Calculator
-???//https://www.codewars.com/kata/57f022a6cba9da84a3000095  //Return 17
+need to fix
+        function fuelPrice(litres, pricePerLitre) {
+            if (litres > 2) {
+                return ((litres * (pricePerLitre - 0.05)).toFixed(2));
+            } else if  (litres > 4) {
+                return ((litres * (pricePerLitre - 0.10)).toFixed(2));
+            } else if  (litres > 6) {
+                return ((litres * (pricePerLitre - 0.15)).toFixed(2));
+            } else if  (litres > 8) {
+                return  ((litres * (pricePerLitre - 0.20)).toFixed(2));
+            } else if (litres < 10) {
+                return ((litres * (pricePerLitre - 0.25)).toFixed(2));
+            }
+        }
+
+
+
+
+
+
+        ???//https://www.codewars.com/kata/57f022a6cba9da84a3000095  //Return 17
 ???//https://www.codewars.com/kata/583710ccaa6717322c000105/train/javascript  //Simple multiplication
             function simpleMultiplication(number) {
                 if (number * 8) {
