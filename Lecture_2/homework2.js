@@ -87,3 +87,14 @@ console.log("case 2: " + building);
 // let a = 7;
 // console.log(!!a);
 
+Codewars:
+
+    https://www.codewars.com/kata/563a631f7cbbc236cf0000c2/solutions/javascript
+        function move (position, roll) {
+            return position + roll * 2
+        }
+        or
+function move (position, roll) {
+    let step = 2 * roll;
+    return position + step;
+}
